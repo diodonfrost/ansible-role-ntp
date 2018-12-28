@@ -1,7 +1,8 @@
 # Test ntp daemon install
 
 ntp_package = "ntp"
-ntp_service = "ntp"
+ntp_service = "ntpd"
+ntp_service = "ntp" if os.family == "debian"
 
 control 'install-01' do
   impact 1.0

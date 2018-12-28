@@ -1,0 +1,13 @@
+---
+# Tasks file for install ntp daemon on Linux system
+
+- name: Install ntp daemon on Linux
+  package:
+    name: "{{ ntp_package }}"
+    state: present
+
+- name: Service ntp on Linux
+  service:
+    name: "{{ ntp_service }}"
+    enabled: yes
+    state: started

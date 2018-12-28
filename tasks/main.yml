@@ -1,2 +1,8 @@
 ---
-# tasks file for ansible-role-ntp
+# Main tasks file for ansible-role-ntp
+
+- name: Include OS specific variables.
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Install ntp agent
+  include_tasks: "packages/setup-{{ ansible_system }}.yml"
