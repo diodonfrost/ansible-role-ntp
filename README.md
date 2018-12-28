@@ -68,6 +68,10 @@ Supported platforms:
     - 11.2
     - 10.4
     - 10.3
+- name: OpenBSD
+  versions:
+    - 6.0
+    - 6.4
 ```
 
 ## Role Variables
