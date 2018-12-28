@@ -19,7 +19,3 @@ ntp_servers:
 # Enable or disable ntp statistics
 # Default is false
 ntp_statistics: false
-
-# Define timezone to use
-# Default is Etc/UTC
-ntp_timezone: Europe/London

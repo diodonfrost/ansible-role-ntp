@@ -82,6 +82,24 @@ This role has multiple variables. The defaults for all these variables are the f
 ---
 # defaults file for ansible-role-ntp
 
+# Restrict acces on ntp server
+# Default is: ::1, 127.0.0.1
+ntp_restrict:
+  - default nomodify notrap nopeer noquery
+  - 127.0.0.1
+  - ::1
+
+# Ntp server to use for date synchronization
+# Default is worldwide pool
+ntp_servers:
+  - 0.pool.ntp.org iburst
+  - 1.pool.ntp.org iburst
+  - 2.pool.ntp.org iburst
+  - 3.pool.ntp.org iburst
+
+# Enable or disable ntp statistics
+# Default is false
+ntp_statistics: false
 ```
 
 ## Dependencies
