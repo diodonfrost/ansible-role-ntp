@@ -11,5 +11,5 @@
     dest: "{{ ntp_configfile }}"
     owner: "{{ ntp_configfile_user }}"
     group: "{{ ntp_configfile_group }}"
-    mode: 644
+    mode: 0644
   notify: "Restart ntp daemons on {{ ansible_system }}"
