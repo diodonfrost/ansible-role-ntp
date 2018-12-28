@@ -73,20 +73,6 @@ This role has multiple variables. The defaults for all these variables are the f
 ---
 # defaults file for ansible-role-ntp
 
-# Specify ntp version to install
-# Depends on the operating system
-# Accepted value: 6,7,8,9,11,latest
-# latest take latest version of ntp supported by operating system
-# Default latest
-ntp_version: latest
-
-# Install ntp virtual machine
-# Default is true
-openjre_install: true
-
-# Install ntp virtual machine and development kit for ntp
-# Default is false
-openjdk_install: false
 ```
 
 ## Dependencies
@@ -95,7 +81,7 @@ None
 
 ## Example Playbook
 
-This is a sample playbook file for deploying the Ansible Galaxy ntp role in a localhost and installing openjdk-jre.
+This is a sample playbook file for deploying the Ansible Galaxy ntp role in a localhost.
 
 ```yaml
 ---

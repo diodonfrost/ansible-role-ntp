@@ -22,7 +22,6 @@ env:
     version: "28"
   - distribution: fedora
     version: "27"
-    playbook: default.yml
   - distribution: fedora
     version: "26"
 
@@ -73,6 +72,7 @@ env:
     version: "2"
   - distribution: amazonlinux
     version: "1"
+
 #--------------------------------
 #
 # Opensuse
