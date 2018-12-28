@@ -1,0 +1,15 @@
+---
+# Tasks file for config ntp daemon
+
+- name: Define timezone to use
+  timezone:
+    name: "{{ ntp_timezone }}"
+
+- name: seting-up ntp config
+  template:
+    src: ntp.conf.j2
+    dest: "{{ ntp_configfile }}"
+    owner: "{{ ntp_configfile_user }}"
+    group: "{{ ntp_configfile_group }}"
+    mode: 644
+  notify: "Restart ntp daemons on {{ ansible_system }}"

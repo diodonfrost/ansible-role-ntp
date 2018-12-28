@@ -4,5 +4,8 @@
 - name: Include OS specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
-- name: Install ntp agent
+- name: Install ntp
   include_tasks: "packages/setup-{{ ansible_system }}.yml"
+
+- name: Configure ntp
+  include_tasks: config.yml

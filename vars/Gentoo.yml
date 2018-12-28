@@ -1,2 +1,7 @@
 ntp_package: net-misc/ntp
 ntp_service: ntp-client
+
+ntp_configfile: /etc/ntp.conf
+ntp_configfile_user: root
+ntp_configfile_group: root
+ntp_driftfile: /var/lib/ntp/drift

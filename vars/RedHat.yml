@@ -1,2 +1,7 @@
 ntp_package: ntp
 ntp_service: ntpd
+
+ntp_configfile: /etc/ntp.conf
+ntp_configfile_user: root
+ntp_configfile_group: root
+ntp_driftfile: /var/lib/ntp/drift
