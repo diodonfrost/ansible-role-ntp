@@ -147,7 +147,6 @@ platforms:
     driver:
       image: diodonfrost/archlinux-rolling-ansible
       run_command: /usr/lib/systemd/systemd
-      platform: arch
       provision_command:
         - sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
         - systemctl enable sshd

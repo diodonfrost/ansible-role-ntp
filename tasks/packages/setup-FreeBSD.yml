@@ -1,0 +1,13 @@
+---
+# Tasks file for install ntp daemon on FreeBSD system
+
+- name: Install ntp daemon on FreeBSD
+  package:
+    name: "{{ ntp_package }}"
+    state: present
+
+- name: Service ntp on FreeBSD
+  service:
+    name: "{{ ntp_service }}"
+    enabled: yes
+    state: started
