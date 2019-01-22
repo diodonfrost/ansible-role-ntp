@@ -1,0 +1,8 @@
+---
+# Tasks file for install ntp daemon on MacOSX system
+
+- name: Service ntp on MacOSX
+  service:
+    name: "{{ ntp_service }}"
+    enabled: yes
+    state: started

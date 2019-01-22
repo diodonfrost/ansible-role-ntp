@@ -68,7 +68,11 @@ platforms:
   - name: ubuntu-14.04
     driver:
       image: diodonfrost/ubuntu-14.04-ansible
+      provision_command: apt-get install -y init
       platform: ubuntu
+      run_command: /sbin/init
+      provision_command:
+        - sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
 
   # Debian
   - name: debian-9
