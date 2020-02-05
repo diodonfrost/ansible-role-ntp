@@ -1,6 +1,6 @@
 # ansible-role-ntp
 
-[![Build Status](https://travis-ci.org/diodonfrost/ansible-role-ntp.svg?branch=master)](https://travis-ci.org/diodonfrost/ansible-role-ntp)
+[![Build Status](https://travis-ci.com/diodonfrost/ansible-role-ntp.svg?branch=master)](https://travis-ci.com/diodonfrost/ansible-role-ntp)
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-diodonfrost.ntp-660198.svg)](https://galaxy.ansible.com/diodonfrost/ntp)
 
 This role provide a compliance for install ntp on your target host.
